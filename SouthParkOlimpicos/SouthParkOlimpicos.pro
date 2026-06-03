@@ -9,14 +9,29 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    main.cpp \
-    widget.cpp
+    Bala.cpp \
+    FaseLanzamiento.cpp \
+    FaseRunner.cpp \
+    Fondo.cpp \
+    GestionJuego.cpp \
+    Objeto.cpp \
+    Obstaculo.cpp \
+    Personaje.cpp \
+    Villano.cpp \
+    main.cpp
 
 HEADERS += \
-    widget.h
+    Bala.h \
+    FaseLanzamiento.h \
+    FaseRunner.h \
+    Fondo.h \
+    GestionJuego.h \
+    Objeto.h \
+    Obstaculo.h \
+    Personaje.h \
+    Villano.h
 
-FORMS += \
-    widget.ui
+FORMS +=
 
 TRANSLATIONS += \
     SouthParkOlimpicos_es_419.ts
@@ -27,3 +42,6 @@ CONFIG += embed_translations
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Recursos.qrc
